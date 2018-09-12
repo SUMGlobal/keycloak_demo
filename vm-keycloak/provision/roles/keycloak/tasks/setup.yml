@@ -34,7 +34,7 @@
   command: "sudo -u {{ keycloak_owner }} {{ keycloak_install_dir }}/bin/jboss-cli.sh --file=/tmp/installKeycloakSSL.cli"
 
 - name: add serenity theme
-  copy: src="serenity" dest="{{ keycloak_install_dir }}/standalone/configuration/themes" owner="{{ keycloak_owner }}" group="{{ keycloak_group }}"
+  copy: src="serenity" dest="{{ keycloak_install_dir }}/themes" owner="{{ keycloak_owner }}" group="{{ keycloak_group }}"
 
 - name: keycloak installed
   file: path={{ check_dir }}/keycloak.done state=touch
