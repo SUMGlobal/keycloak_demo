@@ -12,7 +12,7 @@
   roles:
     - common-setup
     - geerlingguy.mysql 
-    - bennojoy.openldap_server
+    - openldap_server
     - wildfly
     - keycloak
     - keycloak_wf9_adapter
