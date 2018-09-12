@@ -1,7 +1,9 @@
 {
   "name": "cortex",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "phantomjs": "^2.1.7"
+  },
   "scripts": {
     "test": "gulp test"
   },
